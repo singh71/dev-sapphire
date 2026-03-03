@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevSapphire Technologies - Full-stack web development solutions for startups and enterprises">
+    <meta name="keywords" content="web development, full-stack, React, Node.js, Python, cloud solutions">
+    <title>DevSapphire Technologies - Crafting Digital Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "-CFf-XRuDlxmkDmjM",
+        });
+    })();
+    </script>
+    <script src="./mail.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <img class="sapphire" src="./logo.png" alt="logo">
+                    </div>
+                
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <button class="cta-button" onclick="scrollToSection('contact')">Get Started</button>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="#home" onclick="closeMobileMenu()">Home</a>
+                <a href="#services" onclick="closeMobileMenu()">Services</a>
+                <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+                <a href="#about" onclick="closeMobileMenu()">About</a>
+                <a href="#testimonials" onclick="closeMobileMenu()">Testimonials</a>
+                <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="badge">
+                        <i class="fas fa-sparkles"></i>
+                        <span>Premium Web Development Services</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Crafting Digital<br>
+                        <span class="gradient-text">Excellence</span>
+                    </h1>
+
+                    <p class="hero-subtitle">Full-stack web development solutions for startups and enterprises</p>
+
+                    <p class="hero-description">
+                        We transform your ideas into powerful, scalable web solutions. From startups to enterprises, 
+                        we deliver cutting-edge technology that drives business growth.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('contact')">
+                            Start Your Project
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('portfolio')">
+                            View Our Work
+                        </button>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">35+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">8+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Web Development">
+                        <div class="hero-card">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <div class="card-title">Modern Tech Stack</div>
+                                <div class="card-subtitle">React • Node.js • Python • Cloud</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-wheel"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">OUR SERVICES</div>
+                <h2 class="section-title">
+                    Full-Stack Solutions for<br>
+                    <span class="gradient-text">Every Business Need</span>
+                </h2>
+                <p class="section-description">
+                    From concept to deployment, we provide comprehensive development services 
+                    tailored to your specific requirements
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web application development using modern technologies like React, Node.js, Python, and cloud platforms.</p>
+                    <div class="service-link">
+                        <span>Learn more</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that deliver exceptional user experiences and drive engagement.</p>
+                    <div class="service-link">
+                        <span>Learn more</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and deployment on AWS, Azure, and Google Cloud Platform.</p>
+                    <div class="service-link">
+                        <span>Learn more</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Development</h3>
+                    <p>Complete e-commerce solutions with payment integration, inventory management, and analytics.</p>
+                    <div class="service-link">
+                        <span>Learn more</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android using React Native and Flutter.</p>
+                    <div class="service-link">
+                        <span>Learn more</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>RESTful and GraphQL APIs with robust authentication, rate limiting, and comprehensive documentation.</p>
+                    <div class="service-link">
+                        <span>Learn more</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <p>Need a custom solution?</p>
+                <button class="btn-primary" onclick="scrollToSection('contact')">
+                    Let's Discuss Your Project
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">OUR WORK</div>
+                <h2 class="section-title">
+                    Projects That Drive<br>
+                    <span class="gradient-text">Real Results</span>
+                </h2>
+                <p class="section-description">
+                    Explore our portfolio of successful projects across various industries
+                </p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Application</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Application</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise Solution</button>
+                <button class="filter-btn" data-filter="saas">SaaS Platform</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1746016168296-f2ecff6ebbc0?q=85" alt="E-Commerce Platform">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="category-badge">Web Application</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured online marketplace with real-time inventory and payment processing</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=85" alt="Healthcare Management">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="category-badge">Enterprise Solution</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Healthcare Management System</h3>
+                        <p>HIPAA-compliant patient management and telemedicine platform</p>
+                        <div class="tech-tags">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="saas">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1758522490693-38f824cce8ea?q=85" alt="FinTech Dashboard">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="category-badge">SaaS Platform</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>FinTech Dashboard</h3>
+                        <p>Real-time financial analytics and reporting dashboard for enterprises</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>GraphQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=85" alt="Social Media App">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="category-badge">Mobile Application</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Social Media App</h3>
+                        <p>Cross-platform social networking app with real-time messaging</p>
+                        <div class="tech-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=85" alt="Learning Management System">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="category-badge">EdTech</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Learning Management System</h3>
+                        <p>Interactive online learning platform with live classes and assessments</p>
+                        <div class="tech-tags">
+                            <span>Next.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                            <span>WebRTC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=85" alt="Restaurant Management">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="category-badge">Business Solution</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Restaurant Management</h3>
+                        <p>Complete POS and inventory management system for restaurants</p>
+                        <div class="tech-tags">
+                            <span>Angular</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">TESTIMONIALS</div>
+                <h2 class="section-title">
+                    Trusted by Businesses<br>
+                    <span class="gradient-text">Worldwide</span>
+                </h2>
+                <p class="section-description">
+                    Don't just take our word for it - hear what our clients have to say
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "DevSapphire transformed our vision into reality. Their full-stack expertise and attention to detail exceeded our expectations. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Rajesh Kumar">
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <p>CEO, TechStart India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Outstanding work! The team delivered our e-commerce platform on time and within budget. Their technical skills are top-notch."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Priya Sharma">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Product Manager, Global Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professional, reliable, and innovative. DevSapphire built our healthcare platform with exceptional quality and security standards."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Amit Patel">
+                        <div>
+                            <h4>Amit Patel</h4>
+                            <p>Founder, HealthCare Plus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "We've worked with many development teams, but DevSapphire stands out. Their expertise in modern technologies is impressive."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO, Enterprise Corp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <div class="trust-value">100%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-value">50+</div>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-value">35+</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-value">8+</div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team/About Section -->
+    <section id="about" class="team">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">OUR TEAM</div>
+                <h2 class="section-title">
+                    Meet the Experts<br>
+                    <span class="gradient-text">Behind Your Success</span>
+                </h2>
+                <p class="section-description">
+                    A passionate team of developers, designers, and innovators dedicated to delivering excellence
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./images/karan-singh.jpeg" alt="Karan Singh">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#https://www.linkedin.com/in/karan-singh-6035b62ab/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/singh71"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Karan Singh</h3>
+                        <p class="role">Senior Developer & Founder</p>
+                        <p class="bio">Full-stack developer with 8+ years of experience in building scalable web applications</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./images/aman-kumar .jpeg"alt="Aman Morya">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Aman Morya</h3>
+                        <p class="role">Lead UI/UX Designer</p>
+                        <p class="bio">Creative designer passionate about crafting beautiful and intuitive user experiences</p>
+                        <div class="tech-tags">
+                            <span>UI Design</span>
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./images/Kundan Singh.png" alt="Kundan Singh">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Kundan Singh</h3>
+                        <p class="role">Backend Developer</p>
+                        <p class="bio">Backend specialist with expertise in microservices and distributed systems</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./images/saumya-ranjan.jpeg"alt="Saumya Ranjan">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Saumya Ranjan</h3>
+                        <p class="role">Frontend Developer</p>
+                        <p class="bio">Frontend expert focused on performance optimization and modern web technologies</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-info">
+                <h3>About <span class="gradient-text">DevSapphire Technologies</span></h3>
+                <p>
+                    We are a full-stack web development company specializing in creating powerful, scalable digital solutions 
+                    for businesses of all sizes. With over 8 years of experience, we've helped startups launch their MVPs and 
+                    enterprises modernize their digital infrastructure.
+                </p>
+                <p>
+                    Our approach combines cutting-edge technology with user-centric design to deliver applications that not 
+                    only meet technical requirements but also provide exceptional user experiences. From initial concept to 
+                    deployment and beyond, we're your trusted technology partner.
+                </p>
+                <div class="tech-stack">
+                    <p>Technologies We Master</p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>MongoDB</span>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>TypeScript</span>
+                        <span>Next.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">GET IN TOUCH</div>
+                <h2 class="section-title">
+                    Let's Build Something<br>
+                    <span class="gradient-text">Amazing Together</span>
+                </h2>
+                <p class="section-description">
+                    Have a project in mind? We'd love to hear about it. Drop us a message and let's get started!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="label">Email Us</p>
+                            <a href="mailto:devsapphiretechnologies@gmail.com">devsapphiretechnologies@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="label">Call Us</p>
+                            <a href="tel:+919871105093">+91 98711 05093</a>
+                            <p class="small">WhatsApp: +919871105093</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="label">Visit Us</p>
+                            <p>Nangli Vihar, Najafgarh, New Delhi - 110043</p>
+                        </div>
+                    </div>
+
+                    <div class="why-choose">
+                        <h4>Why Choose DevSapphire?</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> 8+ years of industry experience</li>
+                            <li><i class="fas fa-check-circle"></i> 50+ successful projects delivered</li>
+                            <li><i class="fas fa-check-circle"></i> 100% client satisfaction rate</li>
+                            <li><i class="fas fa-check-circle"></i> Modern tech stack & best practices</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated support & maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form"
+                    action="https://formsubmit.co/9871kumarsinghkaran@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary submit-btn" onclick="sendMail()">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <div id="successMessage" class="success-message" style="display: none;"onclick="sendMail()>
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>MESSAGE SENT! </h3>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                       
+                        <div class="logo-text">
+                            <span class="logo-name">Dev<span class="highlight">Sapphire</span></span>
+                            <span class="logo-tagline">TECHNOLOGIES</span>
+                        </div>
+                    </div>
+                    <p>Crafting Digital Excellence. Building powerful web solutions for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Full-Stack Development</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">E-Commerce Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:devsapphiretechnologies@gmail.com">devsapphiretechnologies@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919871105093">+91 98711 05093</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nangli Vihar, Najafgarh, New Delhi - 110043</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span class="highlight">DevSapphire Technologies</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
